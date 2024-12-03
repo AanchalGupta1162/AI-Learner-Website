@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Transcript Processor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Transcript Processor</h1>
+        <div class="input-section">
+            <label for="video-url">Enter YouTube Video URL:</label>
+            <input type="text" id="video-url" placeholder="Paste YouTube link here">
+            <button id="fetch-transcript">Fetch Transcript</button>
+        </div>
+        <div id="actions-section" class="hidden">
+            <h2>Transcript</h2>
+            <textarea id="transcript" readonly></textarea>
+            <button id="get-summary">Get Summary</button>
+            <button id="get-questions">Get Questions</button>
+        </div>
+        <div id="result-section" class="hidden">
+            <h2>Result</h2>
+            <textarea id="result" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
